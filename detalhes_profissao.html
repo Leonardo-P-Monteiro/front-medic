@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalhes da Profissão - Portal de Cargos e Exames</title>
+    <link rel="stylesheet" href="opt/styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Portal de Cargos e Exames Ocupacionais</h1>
+        </div>
+    </header>
+
+    <!-- Container unificado para menu e barra de pesquisa -->
+    <div class="nav-search-container">
+        <div class="container">
+            <!-- Menu de navegação secundário -->
+            <nav class="nav-menu">
+                <a href="index.html" class="nav-link active">Página Inicial</a>
+                <a href="login.html" class="nav-link">Logout</a>
+            </nav>
+            
+            <!-- Barra de pesquisa -->
+            <div class="search-container">
+                <input type="text" class="search-input" placeholder="Pesquisar..." />
+                <button class="search-button">
+                    <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Conteúdo principal: Detalhes da Profissão -->
+    <div class="container">
+        <div class="details-container">
+            <div class="details-header">
+                <h2>Engenheiro Civil</h2>
+                <span class="cbo-code">CBO: 2142-05</span>
+                <div class="description">
+                    <p>Elabora, executa e dirige projetos de engenharia civil relativos a rodovias, portos, aeroportos, vias férreas, sistemas de água e esgoto e outros, estudando características e preparando planos, métodos de trabalho e demais dados requeridos, para possibilitar e orientar a construção, manutenção e reparo das obras mencionadas e assegurar os padrões técnicos exigidos.</p>
+                </div>
+            </div>
+            
+            <div class="exams-section">
+                <h3>Exames Admissionais</h3>
+                <ul class="exam-list">
+                    <li>Exame Clínico Ocupacional</li>
+                    <li>Hemograma Completo</li>
+                    <li>Glicemia em Jejum</li>
+                    <li>Audiometria</li>
+                    <li>Acuidade Visual</li>
+                </ul>
+            </div>
+            
+            <div class="exams-section">
+                <h3>Exames Periódicos</h3>
+                <ul class="exam-list">
+                    <li>Exame Clínico Ocupacional</li>
+                    <li>Hemograma Completo</li>
+                    <li>Glicemia em Jejum</li>
+                    <li>Audiometria (a cada 12 meses)</li>
+                </ul>
+            </div>
+            
+            <div class="exams-section">
+                <h3>Exames Demissionais</h3>
+                <ul class="exam-list">
+                    <li>Exame Clínico Ocupacional</li>
+                    <li>Audiometria</li>
+                </ul>
+            </div>
+            
+            <form action="resultados_consolidados.html">
+                <div class="special-activities">
+                    <h3>Atividades Especiais</h3>
+                    <p>Selecione as atividades especiais que este cargo pode exercer:</p>
+                    
+                    <div class="checkbox-group">
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="altura" name="atividade" value="altura">
+                            <label for="altura">Trabalho em Altura</label>
+                        </div>
+                        
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="confinado" name="atividade" value="confinado">
+                            <label for="confinado">Espaço Confinado</label>
+                        </div>
+                        
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="ruido" name="atividade" value="ruido">
+                            <label for="ruido">Exposição a Ruído</label>
+                        </div>
+                        
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="quimicos" name="atividade" value="quimicos">
+                            <label for="quimicos">Agentes Químicos</label>
+                        </div>
+                        
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="biologicos" name="atividade" value="biologicos">
+                            <label for="biologicos">Agentes Biológicos</label>
+                        </div>
+                        
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="radiacao" name="atividade" value="radiacao">
+                            <label for="radiacao">Radiação Ionizante</label>
+                        </div>
+                        
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="eletricidade" name="atividade" value="eletricidade">
+                            <label for="eletricidade">Eletricidade</label>
+                        </div>
+                        
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="vibracao" name="atividade" value="vibracao">
+                            <label for="vibracao">Vibração</label>
+                        </div>
+                    </div>
+                    
+                    <button type="submit" class="search-button">Buscar Exames Adicionais</button>
+                </div>
+            </form>
+            
+            <a href="lista_profissoes.html" class="back-link">← Voltar para lista de profissões</a>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Portal de Cargos e Exames Ocupacionais. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>
+

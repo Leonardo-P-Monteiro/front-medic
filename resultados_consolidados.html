@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resultados Consolidados - Portal de Cargos e Exames</title>
+    <link rel="stylesheet" href="opt/styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Portal de Cargos e Exames Ocupacionais</h1>
+        </div>
+    </header>
+
+    <!-- Container unificado para menu e barra de pesquisa -->
+    <div class="nav-search-container">
+        <div class="container">
+            <!-- Menu de navegação secundário -->
+            <nav class="nav-menu">
+                <a href="index.html" class="nav-link active">Página Inicial</a>
+                <a href="login.html" class="nav-link">Logout</a>
+            </nav>
+            
+            <!-- Barra de pesquisa -->
+            <div class="search-container">
+                <input type="text" class="search-input" placeholder="Pesquisar..." />
+                <button class="search-button">
+                    <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Conteúdo principal: Resultados Consolidados -->
+    <div class="container">
+        <div class="results-container">
+            <div class="results-header">
+                <h2>Resultados Consolidados</h2>
+                <p>Engenheiro Civil - CBO: 2142-05</p>
+            </div>
+            
+            <div class="results-section">
+                <h3>Exames Padrão</h3>
+                <table class="results-table">
+                    <thead>
+                        <tr>
+                            <th>Tipo</th>
+                            <th>Exames</th>
+                            <th>Periodicidade</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Admissional</td>
+                            <td>Exame Clínico Ocupacional, Hemograma Completo, Glicemia em Jejum, Audiometria, Acuidade Visual</td>
+                            <td>Única vez</td>
+                        </tr>
+                        <tr>
+                            <td>Periódico</td>
+                            <td>Exame Clínico Ocupacional, Hemograma Completo, Glicemia em Jejum, Audiometria</td>
+                            <td>Anual</td>
+                        </tr>
+                        <tr>
+                            <td>Demissional</td>
+                            <td>Exame Clínico Ocupacional, Audiometria</td>
+                            <td>Única vez</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+            <div class="results-section">
+                <h3>Exames Adicionais por Atividades Especiais</h3>
+                <table class="results-table">
+                    <thead>
+                        <tr>
+                            <th>Atividade Especial</th>
+                            <th>Exames Adicionais</th>
+                            <th>Periodicidade</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Trabalho em Altura</td>
+                            <td>Eletroencefalograma (EEG), Eletrocardiograma (ECG), Exame Vestibular</td>
+                            <td>Anual</td>
+                        </tr>
+                        <tr>
+                            <td>Espaço Confinado</td>
+                            <td>Espirometria, Eletrocardiograma (ECG), Avaliação Psicológica</td>
+                            <td>Anual</td>
+                        </tr>
+                        <tr>
+                            <td>Exposição a Ruído</td>
+                            <td>Audiometria com Repouso Acústico</td>
+                            <td>Semestral</td>
+                        </tr>
+                        <tr>
+                            <td>Agentes Químicos</td>
+                            <td>Espirometria, Exames Toxicológicos Específicos</td>
+                            <td>Semestral</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+            <div class="results-section">
+                <h3>Resumo Consolidado</h3>
+                <p>Com base nas atividades especiais selecionadas, este cargo deverá realizar os seguintes exames:</p>
+                
+                <table class="results-table">
+                    <thead>
+                        <tr>
+                            <th>Tipo</th>
+                            <th>Exames Consolidados</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Admissional</td>
+                            <td>Exame Clínico Ocupacional, Hemograma Completo, Glicemia em Jejum, Audiometria, Acuidade Visual, Eletroencefalograma (EEG), Eletrocardiograma (ECG), Espirometria, Avaliação Psicológica</td>
+                        </tr>
+                        <tr>
+                            <td>Periódico</td>
+                            <td>Exame Clínico Ocupacional, Hemograma Completo, Glicemia em Jejum, Audiometria com Repouso Acústico, Eletroencefalograma (EEG), Eletrocardiograma (ECG), Espirometria, Avaliação Psicológica</td>
+                        </tr>
+                        <tr>
+                            <td>Demissional</td>
+                            <td>Exame Clínico Ocupacional, Audiometria, Eletrocardiograma (ECG)</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+            <div class="navigation-actions">
+                <div class="back-links">
+                    <a href="detalhes_profissao.html" class="back-link">← Voltar para detalhes da profissão</a>
+                    <a href="lista_profissoes.html" class="back-link">← Voltar para lista de profissões</a>
+                </div>
+                <button class="print-button">Imprimir guia</button>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Portal de Cargos e Exames Ocupacionais. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>
+
